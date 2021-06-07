@@ -1,0 +1,22 @@
+name: monolog-log-file-explorer
+services:
+    api-server:
+        type: php:7.4
+        webroot: components/api/public
+        ssl: true
+    gui-server:
+        type: apache
+        webroot: components/gui/public
+        ssl: true
+    node:
+        type: node:12
+        globals:
+            pnpm: latest
+tooling:
+    composer:
+        service: api-server
+proxy:
+    api-server:
+        - monolog-log-file-explorer.lndo.site/api
+    gui-server:
+        - monolog-log-file-explorer.lndo.site

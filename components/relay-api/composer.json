@@ -1,0 +1,19 @@
+{
+    "name": "silicon-soldier/monolog-log-file-explorer-api",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Jordan Mele",
+            "email": "jordan.mele@outlook.com.au"
+        }
+    ],
+    "require": {
+        "slim/slim": "^4.5",
+        "slim/psr7": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
+    }
+}
