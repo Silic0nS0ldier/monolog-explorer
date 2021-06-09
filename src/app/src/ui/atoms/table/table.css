@@ -1,0 +1,32 @@
+thead {
+    background-color: gray;
+}
+th {
+    background-color: red;
+}
+td {
+    background-color: rgba(15, 15, 15, 0.1);
+}
+
+tbody > tr:nth-child(even) {
+    background-color: blue;
+}
+tbody > tr:nth-child(odd) {
+    background-color: red;
+}
+
+th, td {
+    padding: 2.5px;
+}
+
+tbody > tr > td:first-child {
+    padding-left: 20px;
+}
+
+tbody > tr > td:last-child {
+    padding-right: 20px;
+}
+
+table {
+    border-spacing: 0;
+}

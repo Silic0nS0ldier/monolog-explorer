@@ -4,10 +4,10 @@ type Props = {
     children: string,
 };
 
-export function Heading1(props: Props) {
+export function PrimaryButton(props: Props) {
     return (
-        <h1>
+        <button class="primary">
             {props.children}
-        </h1>
+        </button>
     )
 }

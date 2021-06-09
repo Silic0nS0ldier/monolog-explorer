@@ -1,0 +1,17 @@
+@import url(./primary-button.css);
+
+button {
+    --button-bg-color: rgb(255, 255, 255);
+    --button-border-color: rgb(138, 136, 124);
+    --button-hover-bg-color: rgb(243, 242, 241);
+    box-sizing: border-box;
+    border: 1px solid var(--button-border-color);
+    border-radius: 2px;
+    padding: 4px 16px;
+    background-color: var(--button-bg-color);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg-color);
+}

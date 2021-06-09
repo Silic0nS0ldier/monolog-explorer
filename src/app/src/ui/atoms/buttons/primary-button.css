@@ -1,0 +1,6 @@
+button.primary {
+    --button-bg-color: rgb(0, 120, 212);
+    --button-border-color: rgb(0, 120, 212);
+    --button-hover-bg-color: rgb(16, 110, 190);
+    color: white;
+}
