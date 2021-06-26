@@ -4,6 +4,8 @@ button {
     --button-bg-color: rgb(255, 255, 255);
     --button-border-color: rgb(138, 136, 124);
     --button-hover-bg-color: rgb(243, 242, 241);
+    --button-text-color: black;
+    color: var(--button-text-color);
     box-sizing: border-box;
     border: 1px solid var(--button-border-color);
     border-radius: 2px;
@@ -14,4 +16,13 @@ button {
 
 button:hover {
     background-color: var(--button-hover-bg-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    button {
+        --button-bg-color: rgb(0, 0, 0);
+        --button-border-color: rgb(75, 75, 75);
+        --button-hover-bg-color: rgb(26, 26, 26);
+        --button-text-color: white;
+    }
 }

@@ -1,11 +1,24 @@
 table {
+    --table-cell-divider-color: rgb(138, 136, 124);
+    --table-bg-color: white;
+    --table-text-color: black;
     width: 100%;
     border-spacing: 0;
+    background-color: var(--table-bg-color);
+    color: var(--table-text-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    table {
+        --table-cell-divider-color: rgb(78, 77, 73);
+        --table-bg-color: rgb(32, 32, 31);
+        --table-text-color: white;
+    }
 }
 
 th, td {
     padding: 2.5px;
-    border-bottom: 1px solid rgb(138, 136, 124);
+    border-bottom: 1px solid var(--table-cell-divider-color);
 }
 
 tr > :first-child {
@@ -31,5 +44,13 @@ table tr:last-child > td {
 }
 
 thead, tfoot {
-    background-color: rgb(243, 242, 241);
+    --table-hf-bg-color: rgb(243, 242, 241);
+    background-color: var(--table-hf-bg-color);
+}
+
+
+@media (prefers-color-scheme: dark) {
+    thead, tfoot {
+        --table-hf-bg-color: rgb(43, 42, 41);
+    }
 }
