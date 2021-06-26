@@ -7,6 +7,7 @@ type TableProps = {
     footer?: TableFooterProps,
 };
 
+// TODO Fix state malfunctions that occur when props are changed in StorybookJS
 export function Table(props: TableProps) {
     let columns: null|JSX.Element = null;
     if (props.columns) {
