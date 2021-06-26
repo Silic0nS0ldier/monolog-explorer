@@ -1,32 +1,35 @@
-thead {
-    background-color: gray;
-}
-th {
-    background-color: red;
-}
-td {
-    background-color: rgba(15, 15, 15, 0.1);
-}
-
-tbody > tr:nth-child(even) {
-    background-color: blue;
-}
-tbody > tr:nth-child(odd) {
-    background-color: red;
+table {
+    width: 100%;
+    border-spacing: 0;
 }
 
 th, td {
     padding: 2.5px;
+    border-bottom: 1px solid rgb(138, 136, 124);
 }
 
-tbody > tr > td:first-child {
-    padding-left: 20px;
+tr > :first-child {
+    padding-left: 15px;
 }
 
-tbody > tr > td:last-child {
-    padding-right: 20px;
+tr > :last-child {
+    padding-right: 15px;
+    /* TODO: Last cell should use all remaining width */
 }
 
-table {
-    border-spacing: 0;
+td {
+    white-space: nowrap;
+}
+
+td:last-child {
+    width: 100%;
+}
+
+table tr:last-child > th,
+table tr:last-child > td {
+    border-bottom: none;
+}
+
+thead, tfoot {
+    background-color: rgb(243, 242, 241);
 }

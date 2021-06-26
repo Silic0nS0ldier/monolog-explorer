@@ -36,15 +36,29 @@ function App() {
                                 { key: 'b2', children: 'B2' },
                             ],
                         },
+                        {
+                            key: '3',
+                            cells: [
+                                { key: 'a3', children: 'A3' },
+                                { key: 'b3', children: 'B3' },
+                            ],
+                        },
+                        {
+                            key: '4',
+                            cells: [
+                                { key: 'a4', children: 'A4' },
+                                { key: 'b4', children: 'B4' },
+                            ],
+                        },
                     ],
                 }}
                 footer={{
                     rows: [
                         {
-                            key: '3',
+                            key: '5',
                             cells: [
-                                { key: 'a3', isHeader: true, children: 'A3' },
-                                { key: 'b3', children: 'B3'  },
+                                { key: 'a5', isHeader: true, children: 'A5' },
+                                { key: 'b5', children: 'B5'  },
                             ],
                         },
                     ],
