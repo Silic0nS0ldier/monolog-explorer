@@ -1,0 +1,9 @@
+table {
+    --table-cell-divider-color: rgb(78, 77, 73);
+    --table-bg-color: rgb(32, 32, 31);
+    --table-text-color: white;
+}
+
+thead, tfoot {
+    --table-hf-bg-color: rgb(43, 42, 41);
+}

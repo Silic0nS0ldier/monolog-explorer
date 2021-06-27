@@ -1,13 +1,7 @@
-import { h } from "preact";
+import { concatClasses } from "../../utilities/concat-classes.js";
+import { ButtonProps, renderButton } from "./button.js";
 
-type Props = {
-    children: string,
-};
-
-export function PrimaryButton(props: Props) {
-    return (
-        <button class="primary">
-            {props.children}
-        </button>
-    )
-}
+export const PrimaryButton = (props: ButtonProps) => renderButton({
+    ...props,
+    class: concatClasses("primary", props.class),
+});

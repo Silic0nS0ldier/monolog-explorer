@@ -8,10 +8,10 @@
 		"@web/dev-server-esbuild": "^0.2.12",
 		"@web/dev-server-storybook": "^0.3.5",
 		"@web/storybook-prebuilt": "^0.1.21-alpha.3",
-		"typescript": "^4.3.2"
+		"typescript": "^4.3.4"
 	},
 	"scripts": {
-		"start": "wds --open -r src/ --node-resolve --watch",
-		"start:sb": "wds -c .storybook/web-dev-server.config.mjs --open -r src/ --node-resolve --watch"
+		"start": "wds -r src/ --watch",
+		"start:sb": "wds -c src/.storybook/web-dev-server.config.mjs -r src/ --watch"
 	}
 }

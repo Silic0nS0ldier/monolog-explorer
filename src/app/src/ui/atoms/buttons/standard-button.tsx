@@ -1,13 +1,3 @@
-import { h } from "preact";
+import { ButtonProps, renderButton } from "./button.js";
 
-type Props = {
-    children: string,
-};
-
-export function StandardButton(props: Props) {
-    return (
-        <button>
-            {props.children}
-        </button>
-    )
-}
+export const StandardButton = (props: ButtonProps) => renderButton(props);

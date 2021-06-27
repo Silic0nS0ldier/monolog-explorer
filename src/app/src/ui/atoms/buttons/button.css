@@ -17,12 +17,3 @@ button {
 button:hover {
     background-color: var(--button-hover-bg-color);
 }
-
-@media (prefers-color-scheme: dark) {
-    button {
-        --button-bg-color: rgb(0, 0, 0);
-        --button-border-color: rgb(75, 75, 75);
-        --button-hover-bg-color: rgb(26, 26, 26);
-        --button-text-color: white;
-    }
-}
